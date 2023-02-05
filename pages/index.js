@@ -6,6 +6,9 @@ import poolImg from '../public/images/pool.jpg';
 import ownerImg from '../public/images/owner.jpg';
 import porchImg from '../public/images/porch.jpg';
 import footerImg from '../public/images/footer.jpg';
+import port1Img from '../public/images/portfolio1.jpg';
+import port2Img from '../public/images/portfolio2.jpg';
+import port3Img from '../public/images/portfolio3.jpg';
 
 export default function Home() {
   return (
@@ -27,8 +30,16 @@ export default function Home() {
             <header className='container flex items-center justify-between h-16 px-4 mx-auto rounded bg-gray-50'>
               <div className='items-center hidden space-x-8 lg:flex'>
                 <div className='space-x-4'>
-                  <SocialIcon url='https://instagram.com' />
-                  <SocialIcon url='https://facebook.com' />
+                  <SocialIcon
+                    url='https://instagram.com'
+                    bgColor='transparent'
+                    fgColor='#059669'
+                  />
+                  <SocialIcon
+                    url='https://facebook.com'
+                    bgColor='transparent'
+                    fgColor='#059669'
+                  />
                 </div>
               </div>
               <div className='items-center hidden space-x-8 lg:flex'>
@@ -39,7 +50,7 @@ export default function Home() {
                   <a rel='noopener noreferrer' href='#services'>
                     Services
                   </a>
-                  <a rel='noopener noreferrer' href='#'>
+                  <a rel='noopener noreferrer' href='#ourwork'>
                     Our Work
                   </a>
                 </div>
@@ -272,7 +283,7 @@ export default function Home() {
                     </p>
                   </div>
                 </section>
-                <section>
+                <section id='ourwork'>
                   <div className='grid gap-6 lg:grid-cols-3'>
                     <div className='overflow-hidden rounded lg:flex lg:col-span-3'>
                       <Image
@@ -282,47 +293,51 @@ export default function Home() {
                       />
                       <div className='p-6 space-y-6 lg:p-8 md:flex md:flex-col bg-gray-50'>
                         <span className='self-start px-3 py-1 text-sm rounded-full bg-emerald-600 text-gray-50'>
-                          Business
+                          Our Work
                         </span>
-                        <h2 className='text-3xl font-bold md:flex-1'>
-                          Curating a workplace that inspires team
-                          movement
-                        </h2>
-                        <div>
-                          <p className='text-gray-600'>
-                            November 30, 2020
-                          </p>
-                          <p className='text-gray-600'>
-                            By Leroy Jenkins
-                          </p>
-                        </div>
+                        <p className='md:flex-1'>
+                          We take pride in the work we do and are
+                          proud to showcase our past projects. Our
+                          team of skilled craftsmen have years of
+                          experience in deck and fence construction
+                          and have completed a wide range of projects,
+                          each one tailored to meet the individual
+                          needs and preferences of our clients.
+                        </p>
+                        <p className='md:flex-1'>
+                          Take a look at our portfolio and see for
+                          yourself why Lee County Deck and Fence is
+                          your trusted source for top-quality deck and
+                          fence construction services. From custom
+                          deck designs to fence installations,
+                          we&#39;ve transformed outdoor spaces into
+                          beautiful and functional living areas. Our
+                          attention to detail and commitment to
+                          excellence is evident in every project we
+                          complete.
+                        </p>
                       </div>
                     </div>
                     <div className='p-6 rounded lg:p-8 lg:py-12 bg-gray-50'>
-                      <h3 className='inline font-medium text-gray-900'>
-                        Panel-based blocks.
-                      </h3>
-                      <p className='inline'>
-                        Flexible panels that are perfect for building
-                        functional layouts.
-                      </p>
+                      <Image
+                        src={port1Img}
+                        alt='Deck image'
+                        className='object-cover w-full rounded-md max-h-96 bg-gray-500'
+                      />
                     </div>
                     <div className='p-6 rounded lg:p-8 lg:py-12 bg-gray-50'>
-                      <h3 className='inline font-medium text-gray-900'>
-                        Responsive design.
-                      </h3>
-                      <p className='inline'>
-                        Panels look great no matter the device.
-                      </p>
+                      <Image
+                        src={port2Img}
+                        alt='Deck image'
+                        className='object-cover w-full rounded-md max-h-96 bg-gray-500'
+                      />
                     </div>
                     <div className='p-6 rounded lg:p-8 lg:py-12 bg-gray-50'>
-                      <h3 className='inline font-medium text-gray-900'>
-                        Premium support.
-                      </h3>
-                      <p className='inline'>
-                        Join over 50 000 satisfied customers who use
-                        our templates.
-                      </p>
+                      <Image
+                        src={port3Img}
+                        alt='Deck image'
+                        className='object-cover w-full rounded-md max-h-96 bg-gray-500'
+                      />
                     </div>
                   </div>
                 </section>
@@ -332,9 +347,7 @@ export default function Home() {
                       Our team is here to help you.
                     </h2>
                     <div className='flex justify-center p-4'>
-                      <a rel='noopener noreferrer' href='#'>
-                        Meet our crew &gt;
-                      </a>
+                      Call Us Today.
                     </div>
                     <Image
                       src={footerImg}
@@ -348,9 +361,21 @@ export default function Home() {
             <footer>
               <div className='container flex justify-end p-6 mx-auto lg:p-8 bg-gray-50'>
                 <div className='flex space-x-2'>
-                  <SocialIcon network='email' />
-                  <SocialIcon url='https://instagram.com' />
-                  <SocialIcon url='https://facebook.com' />
+                  <SocialIcon
+                    network='email'
+                    bgColor='transparent'
+                    fgColor='#059669'
+                  />
+                  <SocialIcon
+                    url='https://instagram.com'
+                    bgColor='transparent'
+                    fgColor='#059669'
+                  />
+                  <SocialIcon
+                    url='https://facebook.com'
+                    bgColor='transparent'
+                    fgColor='#059669'
+                  />
                 </div>
               </div>
             </footer>
