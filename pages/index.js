@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { SocialIcon } from 'react-social-icons';
 import mainImg from '../public/images/main.jpg';
 import poolImg from '../public/images/pool.jpg';
 import ownerImg from '../public/images/owner.jpg';
+import porchImg from '../public/images/porch.jpg';
+import footerImg from '../public/images/footer.jpg';
 
 export default function Home() {
   return (
@@ -17,37 +20,27 @@ export default function Home() {
           name='viewport'
           content='width=device-width, initial-scale=1'
         />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
         <div className='min-h-screen bg-gray-100 text-gray-800'>
           <div className='p-6 space-y-8'>
             <header className='container flex items-center justify-between h-16 px-4 mx-auto rounded bg-gray-50'>
-              <a
-                rel='noopener noreferrer'
-                href='#'
-                aria-label='Homepage'
-              >
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='currentColor'
-                  viewBox='0 0 32 32'
-                  className='w-6 h-6 text-emerald-600'
-                >
-                  <path d='M27.912 7.289l-10.324-5.961c-0.455-0.268-1.002-0.425-1.588-0.425s-1.133 0.158-1.604 0.433l0.015-0.008-10.324 5.961c-0.955 0.561-1.586 1.582-1.588 2.75v11.922c0.002 1.168 0.635 2.189 1.574 2.742l0.016 0.008 10.322 5.961c0.455 0.267 1.004 0.425 1.59 0.425 0.584 0 1.131-0.158 1.602-0.433l-0.014 0.008 10.322-5.961c0.955-0.561 1.586-1.582 1.588-2.75v-11.922c-0.002-1.168-0.633-2.189-1.573-2.742zM27.383 21.961c0 0.389-0.211 0.73-0.526 0.914l-0.004 0.002-10.324 5.961c-0.152 0.088-0.334 0.142-0.53 0.142s-0.377-0.053-0.535-0.145l0.005 0.002-10.324-5.961c-0.319-0.186-0.529-0.527-0.529-0.916v-11.922c0-0.389 0.211-0.73 0.526-0.914l0.004-0.002 10.324-5.961c0.152-0.090 0.334-0.143 0.53-0.143s0.377 0.053 0.535 0.144l-0.006-0.002 10.324 5.961c0.319 0.185 0.529 0.527 0.529 0.916z'></path>
-                  <path d='M22.094 19.451h-0.758c-0.188 0-0.363 0.049-0.515 0.135l0.006-0.004-4.574 2.512-5.282-3.049v-6.082l5.282-3.051 4.576 2.504c0.146 0.082 0.323 0.131 0.508 0.131h0.758c0.293 0 0.529-0.239 0.529-0.531v-0.716c0-0.2-0.11-0.373-0.271-0.463l-0.004-0.002-5.078-2.777c-0.293-0.164-0.645-0.26-1.015-0.26-0.39 0-0.756 0.106-1.070 0.289l0.010-0.006-5.281 3.049c-0.636 0.375-1.056 1.055-1.059 1.834v6.082c0 0.779 0.422 1.461 1.049 1.828l0.009 0.006 5.281 3.049c0.305 0.178 0.67 0.284 1.061 0.284 0.373 0 0.723-0.098 1.027-0.265l-0.012 0.006 5.080-2.787c0.166-0.091 0.276-0.265 0.276-0.465v-0.716c0-0.293-0.238-0.529-0.529-0.529z'></path>
-                </svg>
-              </a>
               <div className='items-center hidden space-x-8 lg:flex'>
                 <div className='space-x-4'>
-                  <a rel='noopener noreferrer' href='#'>
-                    Link
+                  <SocialIcon url='https://instagram.com' />
+                  <SocialIcon url='https://facebook.com' />
+                </div>
+              </div>
+              <div className='items-center hidden space-x-8 lg:flex'>
+                <div className='space-x-4'>
+                  <a rel='noopener noreferrer' href='#about'>
+                    About
+                  </a>
+                  <a rel='noopener noreferrer' href='#services'>
+                    Services
                   </a>
                   <a rel='noopener noreferrer' href='#'>
-                    Link
-                  </a>
-                  <a rel='noopener noreferrer' href='#'>
-                    Link
+                    Our Work
                   </a>
                 </div>
                 <button className='px-4 py-2 rounded-md bg-emerald-600 text-gray-50'>
@@ -83,7 +76,7 @@ export default function Home() {
                     </h1>
                     <p className='my-8'>
                       Contact us today for a free consultation and
-                      estimate. Let's create something beautiful
+                      estimate. Let&#39;s create something beautiful
                       together.
                     </p>
                     <form
@@ -130,7 +123,7 @@ export default function Home() {
                     className='object-cover w-full h-full rounded-md xl:col-span-3 bg-gray-500'
                   />
                 </section>
-                <section>
+                <section id='services'>
                   <span className='block mb-2 text-xs font-medium tracking-widest uppercase lg:text-center text-emerald-600'>
                     What We Do
                   </span>
@@ -159,11 +152,11 @@ export default function Home() {
                         <br />
                         <br />
                         Keep your deck and fence in top condition with
-                        expert repair services. Whether you're dealing
-                        with worn out boards, loose railings, or other
-                        damages, our team of skilled craftsmen will
-                        restore your outdoor living space to its
-                        former glory.
+                        expert repair services. Whether you&#39;re
+                        dealing with worn out boards, loose railings,
+                        or other damages, our team of skilled
+                        craftsmen will restore your outdoor living
+                        space to its former glory.
                       </p>
                     </div>
                     <div className='flex flex-col p-8 space-y-4 rounded-md bg-gray-50'>
@@ -183,7 +176,10 @@ export default function Home() {
                     </div>
                   </div>
                 </section>
-                <section className='grid gap-6 lg:grid-cols-2'>
+                <section
+                  id='about'
+                  className='grid gap-6 lg:grid-cols-2'
+                >
                   <Image
                     src={poolImg}
                     alt='pool image'
@@ -199,7 +195,7 @@ export default function Home() {
                       At Lee County Deck and Fence, we believe that
                       your outdoor space should be an extension of
                       your home, a place for relaxation, entertainment
-                      and memories. That's why we are committed to
+                      and memories. That&#39;s why we are committed to
                       delivering top-quality deck and fence building
                       services that exceed your expectations. Let us
                       help you transform your outdoor space into your
@@ -234,26 +230,54 @@ export default function Home() {
                   </div>
                   <div className='p-8 space-y-8 rounded-md lg:col-span-full lg:py-12 bg-gray-50'>
                     <h2 className='text-5xl font-bold text-gray-900'>
-                      Create with us
+                      About Us
                     </h2>
                     <p className='text-gray-600'>
-                      Lorem ipsum dolor sit amet consectetur,
-                      adipisicing elit. Nesciunt facilis quod
-                      accusantium beatae cum nam adipisci reiciendis
-                      omnis possimus error quo animi voluptas magni,
-                      at incidunt. Nulla ex at ullam corporis quidem
-                      adipisci vitae, perferendis dolorem libero minus
-                      atque tenetur enim pariatur cupiditate commodi
-                      in beatae, ipsa eligendi? Quis, saepe.
+                      Lee County Deck and Fence is your trusted source
+                      for top-quality deck and fence construction
+                      services. Founded with the goal of delivering
+                      exceptional workmanship and customer
+                      satisfaction, our team of skilled craftsmen have
+                      years of experience in the industry and are
+                      dedicated to bringing your vision for the
+                      perfect outdoor living space to life.
+                    </p>
+                    <p className='text-gray-600'>
+                      We understand that your outdoor space is an
+                      extension of your home and a place for
+                      relaxation, entertainment, and memories.
+                      That&#39;s why we use only the finest materials
+                      and state-of-the-art equipment to ensure the
+                      durability and longevity of your new deck or
+                      fence. From start to finish, we&#39;ll work with
+                      you every step of the way to make sure
+                      you&#39;re completely satisfied with the end
+                      result.
+                    </p>
+                    <p className='text-gray-600'>
+                      Whether you&#39;re looking to build a new deck,
+                      replace an old fence, or revamp your outdoor
+                      living space, we have the expertise and
+                      knowledge to make it happen. Our services
+                      include deck construction, fence installation,
+                      deck and fence repair, custom deck and fence
+                      design, and deck and fence staining and sealing.
+                    </p>
+                    <p className='text-gray-600'>
+                      At Lee County Deck and Fence, we believe that
+                      your outdoor space should be a place for making
+                      memories. Let us help you transform your outdoor
+                      space into your own personal oasis. Contact us
+                      today for a free consultation and estimate.
                     </p>
                   </div>
                 </section>
                 <section>
                   <div className='grid gap-6 lg:grid-cols-3'>
                     <div className='overflow-hidden rounded lg:flex lg:col-span-3'>
-                      <img
-                        src='https://source.unsplash.com/random/485x365'
-                        alt=''
+                      <Image
+                        src={porchImg}
+                        alt='Front porch image'
                         className='object-cover w-full h-auto max-h-96 bg-gray-500'
                       />
                       <div className='p-6 space-y-6 lg:p-8 md:flex md:flex-col bg-gray-50'>
@@ -312,9 +336,9 @@ export default function Home() {
                         Meet our crew &gt;
                       </a>
                     </div>
-                    <img
-                      src='https://source.unsplash.com/random/360x240'
-                      alt=''
+                    <Image
+                      src={footerImg}
+                      alt='Front porch image'
                       className='object-cover w-full h-auto mt-8 rounded max-h-96 bg-gray-500'
                     />
                   </div>
@@ -322,61 +346,11 @@ export default function Home() {
               </div>
             </main>
             <footer>
-              <div className='container flex justify-between p-6 mx-auto lg:p-8 bg-gray-50'>
-                <a
-                  rel='noopener noreferrer'
-                  href='#'
-                  className='font-bold'
-                >
-                  Mamba
-                </a>
+              <div className='container flex justify-end p-6 mx-auto lg:p-8 bg-gray-50'>
                 <div className='flex space-x-2'>
-                  <a
-                    aria-label='Email'
-                    rel='noopener noreferrer'
-                    href='#'
-                    className='flex items-center justify-center text-gray-600'
-                  >
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 20 20'
-                      fill='currentColor'
-                      className='w-5 h-5'
-                    >
-                      <path d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z'></path>
-                      <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z'></path>
-                    </svg>
-                  </a>
-                  <a
-                    aria-label='Twitter'
-                    rel='noopener noreferrer'
-                    href='#'
-                    className='flex items-center justify-center text-gray-600'
-                  >
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 50 50'
-                      fill='currentColor'
-                      className='w-5 h-5'
-                    >
-                      <path d='M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z'></path>
-                    </svg>
-                  </a>
-                  <a
-                    aria-label='Github'
-                    rel='noopener noreferrer'
-                    href='#'
-                    className='flex items-center justify-center text-gray-600'
-                  >
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='currentColor'
-                      viewBox='0 0 24 24'
-                      className='w-6 h-6'
-                    >
-                      <path d='M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6C7,7.2,7,6.6,7.3,6 c0,0,1.4,0,2.8,1.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3C15.3,6,16.8,6,16.8,6C17,6.6,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4 c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3 C22,6.1,16.9,1.4,10.9,2.1z'></path>
-                    </svg>
-                  </a>
+                  <SocialIcon network='email' />
+                  <SocialIcon url='https://instagram.com' />
+                  <SocialIcon url='https://facebook.com' />
                 </div>
               </div>
             </footer>
