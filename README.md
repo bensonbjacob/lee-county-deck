@@ -2,7 +2,7 @@
 
 [Live App](lee-county-deck.vercel.app)
 
-Welcome to the Lee County Deck and Fence website! This is a fictional company specializing in high-quality fencing and decking solutions. Our mission is to provide exceptional craftsmanship, durability, and customer satisfaction to enhance the beauty and functionality of outdoor spaces.
+This is a website for a fictional company specializing in high-quality fencing and decking solutions. Our mission is to provide exceptional craftsmanship, durability, and customer satisfaction to enhance the beauty and functionality of outdoor spaces.
 
 The Lee County Deck and Fence website is built using Next.js and Tailwind CSS, making it a powerful and responsive web application. This modern stack allows for efficient development, enhanced user experience, and easy maintenance. The website showcases our company's services, products, and projects, offering a seamless browsing experience for potential clients.
 
