@@ -1,6 +1,6 @@
 # Lee County Deck and Fence
 
-[Live App](lee-county-deck.vercel.app)
+[Live App](http://lee-county-deck.vercel.app)
 
 This is a website for a fictional company specializing in high-quality fencing and decking solutions. Our mission is to provide exceptional craftsmanship, durability, and customer satisfaction to enhance the beauty and functionality of outdoor spaces.
 
